@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Papers Scissors Game</title>
 </head>
 <body>
     <section class="game-container">
         <h1 class="heading">Rock Papers Scissors Game</h1>
-        <label>Number of players :</label>
-        <input type="number" id="numOfHands" value="1" min="1" max="5">
+        <div id="inputcontainer">
+            <label id="numOfHandslabel">Number of players :</label>
+            <input type="number" id="numOfHands" value="1" min="1" max="5">
+            <button id="doneBtn" onclick="play()">Done</button>
+        </div>
+        
         <div class="result"></div>
-        <div class="images"></div>
+        <div class="handImages"></div>
     </section>
     
 </body>
